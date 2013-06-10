@@ -1,0 +1,214 @@
+Crashlog created at 2013-04-20 03:00:50 +0530
+
+===== MESSAGE:
+
+Haml::SyntaxError: Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.
+
+===== COMPILATION STACK:
+
+  - [item]   /index30/ (rep default)
+
+===== STACK TRACE:
+
+  0. layout /default/:14
+  1. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/haml-4.0.2/lib/haml/parser.rb:175:in `block in tabs'
+  2. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/haml-4.0.2/lib/haml/parser.rb:153:in `instance_eval'
+  3. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/haml-4.0.2/lib/haml/parser.rb:153:in `tabs'
+  4. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/haml-4.0.2/lib/haml/parser.rb:752:in `block_opened?'
+  5. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/haml-4.0.2/lib/haml/parser.rb:389:in `tag'
+  6. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/haml-4.0.2/lib/haml/parser.rb:214:in `process_line'
+  7. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/haml-4.0.2/lib/haml/parser.rb:122:in `parse'
+  8. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/haml-4.0.2/lib/haml/engine.rb:66:in `initialize'
+  9. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/filters/haml.rb:23:in `new'
+  10. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/filters/haml.rb:23:in `run'
+  11. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  12. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/result_data/item_rep.rb:409:in `layout'
+  13. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/item_rep_proxy.rb:69:in `layout'
+  14. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule_context.rb:68:in `layout'
+  15. ./Rules:31:in `block in load'
+  16. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  17. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  18. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:383:in `compile_rep'
+  19. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:339:in `block in compile_reps'
+  20. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:332:in `loop'
+  21. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:332:in `compile_reps'
+  22. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  23. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  24. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/commands/compile.rb:325:in `run'
+  25. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  26. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  27. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  28. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/command_runner.rb:13:in `call'
+  29. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  30. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  31. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  32. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  33. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/commands/nanoc.rb:39:in `block in define'
+  34. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  35. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  36. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  37. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli.rb:52:in `block in run'
+  38. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  39. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  40. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib/nanoc/cli.rb:50:in `run'
+  41. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/bin/nanoc:19:in `<top (required)>'
+  42. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/bin/nanoc:23:in `load'
+  ... 45 more lines omitted. See full crash log for details.
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.2 © 2007-2013 Denis Defreyne.
+Running ruby 1.9.3 (2012-10-12) on i686-linux with RubyGems 1.8.24.
+
+===== SYSTEM INFORMATION:
+
+Linux sagarb 3.2.0-36-generic-pae #57-Ubuntu SMP Tue Jan 8 22:01:06 UTC 2013 i686 i686 i386 GNU/Linux
+
+===== INSTALLED GEMS:
+
+  adsf 1.1.1
+  bundler 1.2.1
+  colored 1.2
+  cri 2.3.0
+  haml 4.0.2
+  kramdown 1.0.1
+  mime-types 1.22
+  nanoc 3.6.2
+  nokogiri 1.5.9
+  pygmentize 0.0.3
+  rack 1.5.2
+  rake 10.0.4
+  rubyzip 0.9.9
+  systemu 2.5.2
+  tilt 1.3.7
+  yajl-ruby 1.1.0
+
+===== ENVIRONMENT:
+
+BUNDLE_BIN_PATH => "/home/sagarb/.rvm/gems/ruby-1.9.3-p286@global/gems/bundler-1.2.1/bin/bundle"
+BUNDLE_GEMFILE => "/home/sagarb/workspace/learn-hadoop/Gemfile"
+COLORTERM => "gnome-terminal"
+COMPIZ_CONFIG_PROFILE => "ubuntu"
+DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-lmSkN6QXO2,guid=effa7fdad7b81f8638f9a35700000025"
+DEFAULTS_PATH => "/usr/share/gconf/ubuntu.default.path"
+DESKTOP_SESSION => "ubuntu"
+DISPLAY => ":0"
+GDMSESSION => "ubuntu"
+GEM_HOME => "/home/sagarb/.rvm/gems/ruby-1.9.3-p286"
+GEM_PATH => "/home/sagarb/.rvm/gems/ruby-1.9.3-p286:/home/sagarb/.rvm/gems/ruby-1.9.3-p286@global"
+GNOME_DESKTOP_SESSION_ID => "this-is-deprecated"
+GNOME_KEYRING_CONTROL => "/tmp/keyring-X2oVZk"
+GNOME_KEYRING_PID => "1795"
+GPG_AGENT_INFO => "/tmp/keyring-X2oVZk/gpg:0:1"
+HOME => "/home/sagarb"
+IRBRC => "/home/sagarb/.rvm/rubies/ruby-1.9.3-p286/.irbrc"
+LANG => "en_IN"
+LANGUAGE => "en_IN:en"
+LESSCLOSE => "/usr/bin/lesspipe %s %s"
+LESSOPEN => "| /usr/bin/lesspipe %s"
+LIBGL_DRIVERS_PATH => "/usr/lib/fglrx/dri"
+LOGNAME => "sagarb"
+LS_COLORS => "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:"
+MANDATORY_PATH => "/usr/share/gconf/ubuntu.mandatory.path"
+MY_RUBY_HOME => "/home/sagarb/.rvm/rubies/ruby-1.9.3-p286"
+OLDPWD => "/home/sagarb/workspace"
+PATH => "/home/sagarb/.rvm/gems/ruby-1.9.3-p286/bin:/home/sagarb/.rvm/gems/ruby-1.9.3-p286@global/bin:/home/sagarb/.rvm/rubies/ruby-1.9.3-p286/bin:/home/sagarb/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+PWD => "/home/sagarb/workspace/learn-hadoop"
+RUBYOPT => "-I/home/sagarb/.rvm/gems/ruby-1.9.3-p286@global/gems/bundler-1.2.1/lib -rbundler/setup"
+RUBY_VERSION => "ruby-1.9.3-p286"
+SESSION_MANAGER => "local/sagarb:@/tmp/.ICE-unix/1806,unix/sagarb:/tmp/.ICE-unix/1806"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AGENT_PID => "1843"
+SSH_AUTH_SOCK => "/tmp/keyring-X2oVZk/ssh"
+TERM => "xterm"
+UBUNTU_MENUPROXY => "libappmenu.so"
+USER => "sagarb"
+WINDOWID => "60817414"
+XAUTHORITY => "/home/sagarb/.Xauthority"
+XDG_CONFIG_DIRS => "/etc/xdg/xdg-ubuntu:/etc/xdg"
+XDG_CURRENT_DESKTOP => "Unity"
+XDG_DATA_DIRS => "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/"
+XDG_SEAT_PATH => "/org/freedesktop/DisplayManager/Seat0"
+XDG_SESSION_COOKIE => "ed42ac372384e0b2b70a7a3a00000009-1366391796.141549-699622682"
+XDG_SESSION_PATH => "/org/freedesktop/DisplayManager/Session0"
+_ => "/home/sagarb/.rvm/gems/ruby-1.9.3-p286/bin/nanoc"
+_ORIGINAL_GEM_PATH => "/home/sagarb/.rvm/gems/ruby-1.9.3-p286:/home/sagarb/.rvm/gems/ruby-1.9.3-p286@global"
+__KMP_REGISTERED_LIB_1874 => "0xb5f6ba94-cafe6196-libiomp5.a"
+__array_start => "0"
+_first => "0"
+_second => "1"
+escape_flag => "1"
+rvm_bin_path => "/home/sagarb/.rvm/bin"
+rvm_path => "/home/sagarb/.rvm"
+rvm_prefix => "/home/sagarb"
+rvm_version => "1.16.12 (stable)"
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    adsf (1.1.1)
+      rack (>= 1.0.0)
+    colored (1.2)
+    cri (2.3.0)
+      colored (>= 1.2)
+    haml (4.0.2)
+      tilt
+    kramdown (1.0.1)
+    mime-types (1.22)
+    nanoc (3.6.2)
+      cri (~> 2.3)
+    nokogiri (1.5.9)
+    pygmentize (0.0.3)
+    rack (1.5.2)
+    rake (10.0.4)
+    rubyzip (0.9.9)
+    systemu (2.5.2)
+    tilt (1.3.7)
+    yajl-ruby (1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf
+  haml
+  kramdown
+  mime-types
+  nanoc
+  nokogiri
+  pygmentize
+  rake
+  rubyzip
+  systemu
+  yajl-ruby
+
+===== LOAD PATHS:
+
+  0. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib
+  1. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/yajl-ruby-1.1.0/lib
+  2. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/systemu-2.5.2/lib
+  3. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/rubyzip-0.9.9/lib
+  4. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/pygmentize-0.0.3/lib
+  5. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nokogiri-1.5.9/lib
+  6. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/nanoc-3.6.2/lib
+  7. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/mime-types-1.22/lib
+  8. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/kramdown-1.0.1/lib
+  9. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/haml-4.0.2/lib
+  10. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/tilt-1.3.7/lib
+  11. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/cri-2.3.0/lib
+  12. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/colored-1.2/lib
+  13. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/adsf-1.1.1/lib
+  14. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.5.2/lib
+  15. /home/sagarb/.rvm/gems/ruby-1.9.3-p286/gems/rake-10.0.4/lib
+  16. /home/sagarb/.rvm/gems/ruby-1.9.3-p286@global/gems/bundler-1.2.1/lib
+  17. /home/sagarb/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby/1.9.1
+  18. /home/sagarb/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby/1.9.1/i686-linux
+  19. /home/sagarb/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby
+  20. /home/sagarb/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/vendor_ruby/1.9.1
+  21. /home/sagarb/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/vendor_ruby/1.9.1/i686-linux
+  22. /home/sagarb/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/vendor_ruby
+  23. /home/sagarb/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1
+  24. /home/sagarb/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/i686-linux

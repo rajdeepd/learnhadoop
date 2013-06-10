@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>
+A Brand New nanoc Site - Single Node Cluster
+</title>
+<link href='/stylesheets/bootstrap.css' rel='stylesheet' type='text/css'>
+<link href='/stylesheets/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='/stylesheets/jsp_scroll.css' rel='stylesheet' type='text/css'>
+<link href='/stylesheets/customized.css' rel='stylesheet' type='text/css'>
+<!-- Javascript files -->
+<script src='/js/jquery-1.9.1.min.js' type='text/javascript'></script>
+<script src='/js/bootstrap-affix.js' type='text/javascript'></script>
+<script src='/js/main.js' type='text/javascript'></script>
+<!-- you don't need to keep this, but it's cool for stats! -->
+<meta content='nanoc 3.6.2' name='generator'>
+</head>
+<body>
+<div class='navbar navbar-inverse navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='row-fluid'>
+<a class='brand' href='/'>LearnHadoop</a>
+</div>
+</div>
+</div>
+<div class='container-fluid'>
+<div class='row-fluid'>
+<!-- #sidebar.span3 -->
+<!-- %ul.nav.nav-list.docs-sidenav -->
+<!-- %li -->
+<!-- %a{:href => "/single_node_cluster.html"} -->
+<!-- %i.icon-chevron-right -->
+<!-- Single Node Cluster Installation -->
+<!-- %li -->
+<!-- %a{:href => "/multi_node_cluster.html"} -->
+<!-- %i.icon-chevron-right -->
+<!-- Multi Node Cluster Installation -->
+<!-- %li -->
+<!-- %a{:href => "/hive_with_hadoop.html"} -->
+<!-- %i.icon-chevron-right -->
+<!-- Hive with Hadoop -->
+<!-- %li -->
+<!-- %a{:href => "/flume_with_hadoop.html"} -->
+<!-- %i.icon-chevron-right -->
+<!-- Flume with Hadoop -->
+<!-- %li -->
+<!-- %a{:href => "/oozie.html"} -->
+<!-- %i.icon-chevron-right -->
+<!-- Oozie -->
+<!-- %li -->
+<!-- %a{:href => "/hbase.html"} -->
+<!-- %i.icon-chevron-right -->
+<!-- HBase -->
+<div class='span9' id='main'>
+<h2 id="single-node-cluster">Single Node Cluster</h2>
+
+<p>The main goal of the document is to get a Hadoop version 2.0.3 up and running on single node cluser.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Hadoop is a framework written in Java for running applications on large clusters of commodity hardware and incorporates features similar to those of the Google File System (GFS) and of the MapReduce computing paradigm.</p>
+
+<p>The tutorial has been tested with the following software versions:  </p>
+
+<ol>
+<li>Ubuntu Linux 12.04 (You can download Ubuntu 12.04 from <a href="http://releases.ubuntu.com/12.04/" title="http://releases.ubuntu.com/12.04/">here</a>)   </li>
+  <li>JDK 1.7 (Will also work with JDK 1.6)</li>
+</ol><h2 id="prerequisites">Prerequisites</h2>
+
+<p>The document assumes that you have installed Ubuntu 12.04 and the sytsem is up and running.</p>
+
+<h4 id="create-a-dedicated-user">Create a dedicated user</h4>
+
+<p>create a user ‘<strong>gpuser</strong>’ and group ‘<strong>gp</strong>’. We will be running Hadoop with this userid  </p>
+
+<pre class="terminal">
+$ sudo addgroup gpuser  
+$ sudo adduser --ingroup gpuser gp
+</pre>
+
+<h4 id="jdk-installation">JDK Installation</h4>
+
+<ul>
+<li>If JDK is already installed, ignore this step.</li>
+  <li>If not, Download JDK from <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">here</a>.</li>
+  <li>Login with gpuser to proceed with further installation steps.  </li>
+  <li>Make sure JAVA_HOME is set as follows:
+  (How to Set JAVA_HOME in Ubuntu is <a href="setting_java_home.html">here</a>.  </li>
+</ul><pre class="terminal">
+$ export JAVA_HOME=$HOME/java/jdk1.7.0_17 
+$ export PATH=$PATH:$JAVA_HOME/bin
+</pre>
+
+<ul>
+<li>Verify the Java installation with the following command:</li>
+</ul><pre class="terminal">
+$ java -version
+</pre>
+</div>
+</div>
+</div>
+</body>
+</html>

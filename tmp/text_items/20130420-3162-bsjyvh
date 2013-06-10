@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>
+A Brand New nanoc Site - Single Node Cluster
+</title>
+<link href='/stylesheets/bootstrap.css' rel='stylesheet' type='text/css'>
+<link href='/stylesheets/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='/stylesheets/jsp_scroll.css' rel='stylesheet' type='text/css'>
+<link href='/stylesheets/customized.css' rel='stylesheet' type='text/css'>
+<!-- Javascript files -->
+<script src='/js/jquery-1.9.1.min.js' type='text/javascript'></script>
+<script src='/js/bootstrap-affix.js' type='text/javascript'></script>
+<script src='/js/main_backup.js' type='text/javascript'></script>
+<!-- you don't need to keep this, but it's cool for stats! -->
+<meta content='nanoc 3.6.2' name='generator'>
+</head>
+<body>
+<div class='navbar navbar-inverse navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='row-fluid'>
+<a class='brand' href='/'>LearnHadoop</a>
+</div>
+</div>
+</div>
+<div class='container-fluid'>
+<div class='row-fluid'>
+<div class='scroll-pane' id='devdoc-nav' style='overflow: hidden; padding: 0px; height: 364px; width: 160px;'>
+<div class='jspContainer' style='width: 160px; height: 364px;'>
+<div class='jspPane' style='padding: 0px; top: 0px; width: 160px;'>
+<a class='totop' data-g-event='left-nav-top' href='#top'>to top</a>
+<ul id='nav' style='width: 156px;'>
+<li class='nav-section selected expanded'>
+<div class='nav-section-header'>
+<a href='/index.html'>Get Started</a>
+</div>
+<ul style='display: block;'>
+<li>
+<a href='/index.html'>Creative Vision</a>
+</li>
+<li>
+<a href='/index.html'>Design Principles</a>
+</li>
+<li>
+<a href='/index.html'>UI Overview</a>
+</li>
+</ul>
+</li>
+<li class='nav-section'>
+<div class='nav-section-header'>
+<a href='/index.html'>Style</a>
+</div>
+<ul>
+<li>
+<a href='/index.html'>Devices and Displays</a>
+</li>
+<li>
+<a href='/index.html'>Themes</a>
+</li>
+<li>
+<a href='/index.html'>Touch Feedback</a>
+</li>
+<li>
+<a href='/index.html'>Metrics and Grids</a>
+</li>
+<li>
+<a href='/index.html'>Typography</a>
+</li>
+<li>
+<a href='/index.html'>Color</a>
+</li>
+<li>
+<a href='/index.html'>Iconography</a>
+</li>
+<li>
+<a href='/index.html'>Writing Style</a>
+</li>
+</ul>
+</li>
+<li class='nav-section'>
+<div class='nav-section-header'>
+<a href='/index.html'>Patterns</a>
+</div>
+<ul>
+<li>
+<a href='/index.html'>New in Android</a>
+</li>
+<li>
+<a href='/index.html'>Gestures</a>
+</li>
+<li>
+<a href='/index.html.html'>App Structure</a>
+</li>
+<li>
+<a href='/index.html'>Navigation</a>
+</li>
+<li>
+<a href='/index.html'>Action Bar</a>
+</li>
+<li>
+<a href='/index.html'>Multi-pane Layouts</a>
+</li>
+<li>
+<a href='/index.html'>Swipe Views</a>
+</li>
+<li>
+<a href='/index.html'>Selection</a>
+</li>
+<li>
+<a href='/index.html'>Confirming & Acknowledging</a>
+</li>
+<li>
+<a href='/index.html'>Notifications</a>
+</li>
+<li>
+<a href='/index.html'>Widgets</a>
+</li>
+<li>
+<a href='/index.html'>Settings</a>
+</li>
+<li>
+<a href='/index.html'>Help</a>
+</li>
+<li>
+<a href='/index.html'>Compatibility</a>
+</li>
+<li>
+<a href='/index.html'>Accessibility</a>
+</li>
+<li>
+<a href='/index.html'>Pure Android</a>
+</li>
+</ul>
+</li>
+<li class='nav-section'>
+<div class='nav-section-header'>
+<a href='/index.html'>Building Blocks</a>
+</div>
+<ul>
+<li>
+<a href='/index.html'>Tabs</a>
+</li>
+<li>
+<a href='/index.html'>Lists</a>
+</li>
+<li>
+<a href='/index.html'>Grid Lists</a>
+</li>
+<li>
+<a href='/index.html'>Scrolling</a>
+</li>
+<li>
+<a href='/index.html'>Spinners</a>
+</li>
+<li>
+<a href='/index.html'>Buttons</a>
+</li>
+<li>
+<a href='/index.html'>Text Fields</a>
+</li>
+<li>
+<a href='/index.html'>Seek Bars</a>
+</li>
+<li>
+<a href='/index.html'>Progress & Activity</a>
+</li>
+<li>
+<a href='/index.html'>Switches</a>
+</li>
+<li>
+<a href='/index.html'>Dialogs</a>
+</li>
+<li>
+<a href='/index.html'>Pickers</a>
+</li>
+</ul>
+</li>
+<li class='nav-section'>
+<div class='nav-section-header empty'>
+<a href='/index.html'>Downloads</a>
+</div>
+</li>
+<li class='nav-section'>
+<div class='nav-section-header empty'>
+<a href='/index.html'>Videos</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='span9' id='main'>
+<h2 id="single-node-cluster">Single Node Cluster</h2>
+
+<p>The main goal of the document is to get a Hadoop version 2.0.3 up and running on single node cluser.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Hadoop is a framework written in Java for running applications on large clusters of commodity hardware and incorporates features similar to those of the Google File System (GFS) and of the MapReduce computing paradigm.</p>
+
+<p>The tutorial has been tested with the following software versions:  </p>
+
+<ol>
+<li>Ubuntu Linux 12.04 (You can download Ubuntu 12.04 from <a href="http://releases.ubuntu.com/12.04/" title="http://releases.ubuntu.com/12.04/">here</a>)   </li>
+  <li>JDK 1.7 (Will also work with JDK 1.6)</li>
+</ol><h2 id="prerequisites">Prerequisites</h2>
+
+<p>The document assumes that you have installed Ubuntu 12.04 and the sytsem is up and running.</p>
+
+<h4 id="create-a-dedicated-user">Create a dedicated user</h4>
+
+<p>create a user ‘<strong>gpuser</strong>’ and group ‘<strong>gp</strong>’. We will be running Hadoop with this userid  </p>
+
+<pre class="terminal">
+$ sudo addgroup gpuser  
+$ sudo adduser --ingroup gpuser gp
+</pre>
+
+<h4 id="jdk-installation">JDK Installation</h4>
+
+<ul>
+<li>If JDK is already installed, ignore this step.</li>
+  <li>If not, Download JDK from <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">here</a>.</li>
+  <li>Login with gpuser to proceed with further installation steps.  </li>
+  <li>Make sure JAVA_HOME is set as follows:
+  (How to Set JAVA_HOME in Ubuntu is <a href="setting_java_home.html">here</a>.  </li>
+</ul><pre class="terminal">
+$ export JAVA_HOME=$HOME/java/jdk1.7.0_17 
+$ export PATH=$PATH:$JAVA_HOME/bin
+</pre>
+
+<ul>
+<li>Verify the Java installation with the following command:</li>
+</ul><pre class="terminal">
+$ java -version
+</pre>
+</div>
+</div>
+</div>
+</body>
+</html>
